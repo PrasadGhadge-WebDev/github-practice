@@ -11,12 +11,15 @@ function UseState() {
 
     const DecrmentCount = () => {
         setCount(count - 1)
+        if (count <= 0){
+            setCount(count==0)
+        }
     }
 
   return (
     <>
     <div>
-        <h1>Count: {count}</h1>
+        <h1>Count App: {count}</h1>
     <button onClick = {IncrementCount} >Increment Count</button>
     <button onClick = {DecrmentCount}>Decrment Count </button>
     </div>
