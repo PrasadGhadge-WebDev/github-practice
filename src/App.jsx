@@ -6,6 +6,7 @@ import Counter from "./counter"
 
 function App() {
   const [count, setCount] = useState(0)
+  const [date, setData] = useState("")
 
   return (
     <>
